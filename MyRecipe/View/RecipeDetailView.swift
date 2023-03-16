@@ -25,6 +25,7 @@ struct RecipeDetailView: View {
     @State private var showingAlert2: Bool = false
     @State private var deleteAction: Bool = false
     @State private var errorTitle: String = "削除してよろしいですか？"
+    @State private var errorTitle2: String = ""
     
     @ObservedObject var sample: Recipe
     
@@ -101,7 +102,7 @@ struct RecipeDetailView: View {
                                 
                                 Button {
                                     self.showingAlert2 = true
-                                    self.errorTitle = "材料をメモに追加しますか？"
+                                    self.errorTitle2 = "材料をメモに追加しますか？"
                                     
                                 } label: {
                                     Image(systemName: "cart")
@@ -109,7 +110,7 @@ struct RecipeDetailView: View {
                                         .frame(width: 25, height: 25)
                                         .padding(.trailing, 15)
                                 }
-                                .alert(Text(errorTitle), isPresented: $showingAlert2) {
+                                .alert(Text(errorTitle2), isPresented: $showingAlert2) {
                                     Button("キャンセル") {
                                         // 処理なし
                                     }
