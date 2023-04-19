@@ -87,14 +87,8 @@ struct HomeView: View {
         NavigationStack {
             ScrollView(.vertical, showsIndicators: false) {
                 HStack {
-                    Text("Recipes List")
-                        .font(.system(size: 19, weight: .semibold, design: .rounded))
-                        .foregroundColor(Color("tintColor"))
-                        .padding(.leading, 25)
-                        .padding(.top)
-                    
                     Text(category)
-                        .font(.system(size: 14, weight: .semibold, design: .rounded))
+                        .font(.system(size: 16, weight: .semibold, design: .rounded))
                         .foregroundColor(Color("tintColor"))
                         .padding(.top)
                         .padding(.horizontal, 10)
@@ -104,6 +98,7 @@ struct HomeView: View {
                                 .padding(.top)
                                 .frame(height: 45)
                         )
+                        .padding(.leading, 25)
                         
                     
                     Spacer()

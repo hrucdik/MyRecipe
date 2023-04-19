@@ -76,12 +76,12 @@ struct AddRecipeView: View {
                         // MARK: - title
                         
                         TextField(text: $title) {
-                            Text("Title")
+                            Text("タイトル")
                                 .foregroundColor(checkTitleEmpty ? Color.red.opacity(0.3) : Color.gray.opacity(0.3))
                         }
                         .padding()
                         .frame(width: 350, height: 60)
-                        .font(.system(size: 35))
+                        .font(.system(size: 32, weight: .bold, design: .rounded))
                         .overlay(
                             RoundedRectangle(cornerRadius: 18)
                                 .stroke(checkTitleEmpty ? Color.red : Color.clear)
@@ -104,9 +104,9 @@ struct AddRecipeView: View {
                                     VStack {
                                         Image(systemName: "photo")
                                             .font(.system(size: 35))
-                                        Text("add a photo")
+                                        Text("画像を追加")
                                             .padding(.top, 4)
-                                            .font(.system(size: 24))
+                                            .font(.system(size: 20))
                                     } //: vstack
                                 } //: group
                                 .frame(width: 350, height: 200)
@@ -142,7 +142,6 @@ struct AddRecipeView: View {
                             }
                         }
                         
-                        
                         // MARK: - Category
                         
                         HStack {
@@ -172,13 +171,10 @@ struct AddRecipeView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-//                            HStack {
                                 Text("材料")
                                     .padding(.leading, 10)
                                     .font(.system(size: 18, weight: .medium, design: .rounded))
                                     .foregroundColor(Color("tintColor"))
-//
-                            
                             
                             ZStack(alignment: .topLeading) {
                                 TextEditor(text: $ingredient).id(1)
