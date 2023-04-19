@@ -22,8 +22,10 @@ UIフレームワーク：SwiftUI</br>
 </p>
 </br>
 
-- リスト1
-    - リスト1_1
+- レシピ追加遷移画面（左図）
+    - レシピ追加画面に遷移するための画面
+- レシピ追加画面（真ん中・右図）
+    - タイトル・画像・カテゴリー・材料・作り方を入力して保存する画面
 
 </br>
 <p>
@@ -31,3 +33,10 @@ UIフレームワーク：SwiftUI</br>
 <img src="https://user-images.githubusercontent.com/123617091/233000785-e93ba4c1-5615-4e22-84e1-0fb0e0265ad1.png" width="32%" />
 <img src="https://user-images.githubusercontent.com/123617091/233000941-ace8a2c7-63ce-4564-9628-bae5706f3663.png" width="32%" />
 </p>
+
+</br>
+<p>
+<img src="https://user-images.githubusercontent.com/123617091/233003632-3ad3575a-a97e-4efb-acf1-056d1bb8d6bf.png" width="32%" />
+<img src="https://user-images.githubusercontent.com/123617091/233000785-e93ba4c1-5615-4e22-84e1-0fb0e0265ad1.png" width="32%" />
+</p>
+</br>
